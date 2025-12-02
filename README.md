@@ -80,15 +80,6 @@ Hi, Iam a Game Developer and Data Analyst
 ### <p align="left">🎮 Let's play the game: </p>
 
 ###
-
-
-###
-
 <img src="https://raw.githubusercontent.com/zulkarid/zulkarid/output/snake.svg" alt="Snake animation" />
-
-###
-
-<div align="left">
-</div>
 
 ###
