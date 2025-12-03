@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo (main branch)
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Generate pacman-contribution-graph.svg
@@ -24,17 +24,12 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Checkout output branch
-        uses: actions/checkout@v3
-        with:
-          ref: output
-
       - name: Deploy to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          keep_files: true
+          keep_history: true
           commit_message: "update pacman graph"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
