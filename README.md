@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hi, Iam a Game Developer and Data Analyst
+Hi, Welcome to my github profile. This is the place where i put all my code to learn and some project. Have fun here :D
 
 ---
 
